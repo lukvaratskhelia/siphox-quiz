@@ -1,0 +1,9 @@
+{
+  "name": "siphox-quiz",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/siphox-quiz/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project siphox-quiz --web",
+  "targets": {}
+}

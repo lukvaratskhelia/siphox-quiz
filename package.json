@@ -2,7 +2,9 @@
   "name": "@siphox-quiz/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve siphox-quiz"
+  },
   "private": true,
   "dependencies": {
     "react": "18.3.1",

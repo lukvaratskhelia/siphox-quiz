@@ -1,0 +1,48 @@
+@keyframes progress-scale {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes progress-highlight {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.root {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.segment {
+  height: 6px;
+  transform-origin: center left;
+  transition: background .3s;
+}
+
+.segmentInProgress {
+  animation: progress-scale .3s ease;
+  background-color: var(--color-primary);
+}
+
+.segmentAnsweredCorrect {
+  animation: progress-scale .3s ease;
+  background-color: var(--color-success);
+}
+
+.segmentAnsweredWrong {
+  animation: progress-scale .3s ease;
+  background-color: var(--color-error);
+}
+
+.segmentSkipped {
+  background-color: var(--color-error);
+}

@@ -1,0 +1,19 @@
+html {
+  --size-base: 1rem;
+  --size-spacing-1: .125rem;
+  --size-spacing-2: .25rem;
+  --size-spacing-3: .5rem;
+  --size-spacing-4: .75rem;
+  --size-spacing-5: var(--size-base);
+  --size-spacing-6: 2rem;
+
+  --size-border-radius-small: var(--size-spacing-2);
+  --size-border-radius-medium: var(--size-spacing-3);
+  --size-border-radius-large: var(--size-spacing-4);
+
+  --size-gap-small: var(--size-spacing-3);
+  --size-gap-large: var(--size-spacing-5);
+
+  --size-padding-small: var(--size-spacing-3);
+  --size-padding-large: var(--size-spacing-5);
+}

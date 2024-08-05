@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+      "id": "uvjkP9zNOzzvtgWa",
+      "question": "First question",
+      "title": "Additional title",
+      "description": "Description for the question",
+      "image": {
+        "src": "/images/cat-dog.webp",
+        "alt": "sample image"
+      },
+      "answerType": "single",
+      "answerOptions": [
+        {"label": "Incorrect answer", "value":  "incorrect-1"},
+        {"label": "Another incorrect answer", "value":  "incorrect-2"},
+        {"label": "Correct answer", "value":  "correct"},
+        {"label": "Yet another incorrect answer", "value":  "incorrect-3"}
+      ],
+      "correctAnswer": "correct"
+    },
+    {
+      "id": "fP7J9KEOATyTU9zu",
+      "question": "Single answer with boolean values boolean",
+      "answerType": "single",
+      "answerOptions": [
+        {"label":  "Yes (correct)", "value": true},
+        {"label":  "No (skips next question)", "value": false}
+      ],
+      "correctAnswer": true
+    },
+    {
+      "id": "yKmKUW5dhQzheAvd",
+      "question": "Single answer (may be skipped)",
+      "answerType": "single",
+      "answerOptions": [
+        {"label": "Incorrect answer", "value":  "incorrect-1"},
+        {"label": "Another incorrect answer", "value":  "incorrect-2"},
+        {"label": "Correct answer", "value":  "correct"},
+        {"label": "Yet another incorrect answer", "value":  "incorrect-3"}
+      ],
+      "correctAnswer": "correct",
+      "skipStrategy": {
+        "questionId": "fP7J9KEOATyTU9zu",
+        "answerRelation": "equals",
+        "answerValue": false
+      }
+    },
+    {
+      "id": "QBY9m09SVhEIDEjs",
+      "question": "Multi answer",
+      "answerType": "multi",
+      "answerOptions": [
+        {"label": "Correct answer", "value":  "correct-1"},
+        {"label": "Also correct answer", "value":  "correct-2"},
+        {"label": "Incorrect one", "value":  "incorrect-1"},
+        {"label": "Also incorrect", "value":  "incorrect-2"}
+      ],
+      "correctAnswer": ["correct-1", "correct-2"]
+    },
+    {
+      "id": "bCRzihMcpO9KL06J",
+      "question": "Question with free answer",
+      "description": "Correct answer is 'bla bla'",
+      "answerType": "free-text",
+      "correctAnswer": "bla bla"
+    }
+  ]
+}

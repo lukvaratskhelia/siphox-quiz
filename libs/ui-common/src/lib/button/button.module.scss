@@ -1,0 +1,26 @@
+.root {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: .25rem;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0 var(--size-spacing-5);
+  transition: background-color .2s ease;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  &:active {
+    background-color: var(--color-primary-darker);
+  }
+
+  &:disabled {
+    background-color: var(--color-primary);
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}

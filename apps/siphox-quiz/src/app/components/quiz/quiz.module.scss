@@ -1,0 +1,16 @@
+@import "../../../assets/styles/helpers/mixins";
+
+.root {
+  border-radius: var(--size-border-radius-large);
+  box-shadow: 0 0 2rem var(--color-shadow);
+  background-color: var(--color-bg-paper);
+  margin: var(--size-spacing-4);
+  max-width: 54rem;
+  padding: var(--size-spacing-5);
+  max-height: calc(100vh - var(--size-spacing-4) * 6);
+  overflow: auto;
+
+  @include desktop {
+    margin: var(--size-spacing-6) auto;
+  }
+}

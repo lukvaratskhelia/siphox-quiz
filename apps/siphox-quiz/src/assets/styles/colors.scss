@@ -1,0 +1,33 @@
+html {
+  --color-bg-main: #fafafa;
+  --color-bg-paper: #fff;
+
+  --color-text-main: #000;
+  --color-text-secondary: #333;
+  --color-text-primary: #fff;
+
+  --color-success: #4CAF50;
+  --color-error: #F44336;
+
+  --color-primary: #03A9F4;
+  --color-primary-dark: #0288D1;
+  --color-primary-darker: #01579B;
+
+  --color-shadow: rgba(0, 0, 0, .09);
+  --color-shadow-dark: rgba(0, 0, 0, .91);
+
+  --color-border: var(--color-text-main);
+
+
+  // dark mode
+  @media (prefers-color-scheme: dark) {
+    --color-bg-main: #212121;
+    --color-bg-paper: #424242;
+
+    --color-text-main: #fff;
+    --color-text-secondary: #f1f1f1;
+
+    --color-shadow: rgba(255, 255, 255, .13);
+    --color-shadow-dark: rgba(255, 255, 255, .91);
+  }
+}

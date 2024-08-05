@@ -1,0 +1,40 @@
+.root {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  gap: var(--size-spacing-3);
+
+  &:hover {
+    .box {
+      box-shadow: 0 0 var(--size-spacing-2) var(--color-shadow-dark);
+    }
+  }
+}
+
+.input {
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+
+.box {
+  border: var(--size-spacing-1) solid var(--color-text-main);
+  height: var(--size-spacing-5);
+  padding: var(--size-spacing-1);
+  transition: box-shadow .2s ease;
+  width: var(--size-spacing-5);
+
+  &:before {
+    background-color: var(--color-text-main);
+    content: '';
+    display: block;
+    height: var(--size-spacing-3);
+    transform: scale(0);
+    transition: transform .3s ease;
+    width: var(--size-spacing-3);
+  }
+}
+
+.input:checked + .box:before {
+  transform: scale(1);
+}

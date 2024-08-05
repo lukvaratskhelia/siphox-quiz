@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-spacing-5);
+}
+
+.table {
+  width: 100%;
+
+  th {
+    text-align: left;
+  }
+}
+
+.rowCorrect {
+  color: var(--color-success);
+}
+
+.rowIncorrect {
+  color: var(--color-error);
+}

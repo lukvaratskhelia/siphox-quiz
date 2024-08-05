@@ -7,4 +7,4 @@ SiPhox Health Interview Task
 Please follow the next steps to run the project on your local machine:
 * Run `npm install` from project root directory
 * Run `npm run start` to start the development server.
-* Navigate to `http://localhost:4200'
+* Navigate to `http://localhost:4200' and open the links available on the homepage to access quizes

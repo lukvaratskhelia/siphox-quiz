@@ -1,10 +1,6 @@
 import { isUserAnswerMatch } from './is-user-answer-match';
-import {
-  Answer,
-  AnswerId,
-  IdAnswerRelation,
-  IdAnswerType,
-} from '@siphox-quiz/common';
+import { Answer, AnswerId } from '../types';
+import { IdAnswerRelation } from '../constants';
 
 describe('function isUserAnswerMatch', () => {
   const userAnswer: Answer = 'target-answer';

@@ -1,5 +1,5 @@
-import { isUserAnswerCorrect } from './is-user-answer-correct';
-import { IdAnswerType } from '@siphox-quiz/common';
+import { isUserAnswerCorrect } from '.';
+import { IdAnswerType } from '../constants';
 
 describe('function isUserAnswerCorrect', () => {
   it('should correctly return if user answer is correct for free text', () => {

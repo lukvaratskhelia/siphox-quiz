@@ -18,4 +18,5 @@ export const isUserAnswerMatch = (
   if (type === IdAnswerRelation.NotIncludes && Array.isArray(userAnswer)) {
     return !userAnswer.includes(targetAnswer);
   }
+  return false;
 };
